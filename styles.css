@@ -128,7 +128,16 @@ form{
     background-image: linear-gradient(red,orange);
 }
 
+.item1{
+    transform: translate(50px,50px);
+}
 
+.item2{
+    transform: rotate(90deg);
+}
+.item3{
+    transform: rotateX(45deg);
+}
 
 .whatsapp{
     height: 40px;
