@@ -151,6 +151,14 @@ form{
     transform: skew( 15deg);
 }
 
+.item7{
+    transition: height 2.7s;
+}
+
+.item7:hover{
+    height: 200px;
+}
+
 .whatsapp{
     height: 40px;
     width: 40px;
