@@ -139,6 +139,18 @@ form{
     transform: rotateX(45deg);
 }
 
+.item4{
+    transform: rotateY(45deg);
+}
+
+.item5{
+    transform: scale(0.7);
+}
+
+.item6{
+    transform: skew( 15deg);
+}
+
 .whatsapp{
     height: 40px;
     width: 40px;
