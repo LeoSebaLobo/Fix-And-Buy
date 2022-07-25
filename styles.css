@@ -121,43 +121,14 @@ form{
 
 .itemP{
     width: auto;
-    height: 250px;
+    height: 350px;
     border: 2px solid orange;
     padding: 15px;
     margin: 15px;
     background-image: linear-gradient(red,orange);
 }
 
-.item1{
-    transform: translate(50px,50px);
-}
 
-.item2{
-    transform: rotate(90deg);
-}
-.item3{
-    transform: rotateX(45deg);
-}
-
-.item4{
-    transform: rotateY(45deg);
-}
-
-.item5{
-    transform: scale(0.7);
-}
-
-.item6{
-    transform: skew( 15deg);
-}
-
-.item7{
-    transition: height 2.7s;
-}
-
-.item7:hover{
-    height: 200px;
-}
 
 .whatsapp{
     height: 40px;
