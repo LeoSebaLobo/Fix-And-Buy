@@ -9,6 +9,67 @@
     <link rel="shorcut icon" href="imagenes/logo.jpeg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css    ">
     <link rel="stylesheet" href="https://bootswatch.com/5/vapor/bootstrap.min.css">
+
+    <style>
+        html {
+            min-height: 100%;
+            position: relative;
+}
+        body {
+            margin: 0;
+            margin-bottom: 40px;
+}
+        footer {
+            background-color: black;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 40px;
+        }
+        .whatsapp{
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    background-color: greenyellow;
+    bottom: 40px;
+    right: 40px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 40px;
+    border: black 3px solid;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 0 10px black;
+}
+        #quienessomos{
+            text-align: center;
+        }
+        .card{
+            margin: 15px;
+        }
+        #seccionvideo{
+            margin-top: 50px;
+        
+        }
+        .testimonios{
+            background-color: white;
+            border: 5px solid black;
+            margin: 20px 150px 20px 150px;
+            
+        }
+        .tituloTestimonio{
+            text-align: center;
+        }
+        .card-title{
+            text-align: center;
+            color: yellow;
+        }
+        .card-text{
+            text-align: center;
+            color: yellow;
+        }
+        
+    </style>
 </head>
 
 <body>
@@ -59,30 +120,67 @@
     <main>
     <section id="seccionvideo">
     <center><iframe id="video1" src="imagenes/videofix.mp4" width="500px" height="500px" frameborder="0">Video fixandbuy</iframe></center>
-    </section>
-    <h2 id="quienessomos">Quienes Somos</h2>
-    <section id="fotos">        
-        <div class="item"><img src="imagenes/facundo.png" alt="facundo" width="200px" height="200px"></div>
-        <div class="item"></div><img src="imagenes/nicolas.png" alt="nicolas"   width="200px" height="200px"></div>
-        <div class="item"></div><img src="imagenes/alfonso.png" alt="alfonso" width="200px" height="200px"></div>
-        <div class="item"></div><img src="imagenes/eros.png" alt="eros" width="200px" height="200px"></div>
-          
-    </section>
-
-    <h2>Testimonios</h2>
-    <section class="testimonios">
-        <Div><img src="imagenes/Testimonios/Testimonio 1.PNG" alt="T1"></Div>
-        <Div><img src="imagenes/Testimonios/Testimonio 2.PNG" alt="T2"></Div>
-        <Div><img src="imagenes/Testimonios/Testimonio 3.PNG" alt="T3"></Div>
-        <Div><img src="imagenes/Testimonios/Testimonio 4.PNG" alt="T4"></Div>
-        <Div><img src="imagenes/testimonios/Testimonio 5.PNG" alt="T5"></Div>
-        <Div><img src="imagenes/Testimonios/Testimonio 6.PNG" alt="T6"></Div>
-        <Div><img src="imagenes/testimonios/Testimonio 7.PNG" alt="T7"></Div>
-        <Div><img src="imagenes/testimonios/Testimonio 8.PNG" alt="T8"></Div>
-        <Div><img src="imagenes/Testimonios/Testimonio 10.PNG" alt="T9"></Div>
-        <Div><img src="imagenes/Testimonios/Testimonio 9.PNG" alt="T10"></Div>
-        
-    </section>
+    
+        <h2 id="quienessomos">Quienes Somos</h2>
+        <div class="container">
+            <div class="row">
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/facundo.png" class="card-img-top" alt="Gerente">
+                    <div class="card-body">
+                        <h5 class="card-title">Gerente</h5>
+                        <p class="card-text">Facundo</p>
+                        <a href="#" class="btn btn-primary">Enviar Mail</a>
+                    </div>
+                    
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/nicolas.png" class="card-img-top" alt="Empleado">
+                    <div class="card-body">
+                        <h5 class="card-title">Nicolas</h5>
+                        <p class="card-text">Empleado</p>
+                        <a href="#" class="btn btn-primary">Enviar Mail</a>
+                    </div>
+                    
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/alfonso.png" class="card-img-top" alt="Empleados">
+                    <div class="card-body">
+                        <h5 class="card-title">Alfonso</h5>
+                        <p class="card-text">Empleado</p>
+                        <a href="#" class="btn btn-primary">Enviar Mail</a>
+                    </div>
+                    
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/eros.png" class="card-img-top" alt="Servicio">
+                    <div class="card-body">
+                        <h5 class="card-title">Eros</h5>
+                        <p class="card-text">Servcio Tecnico</p>
+                        <a href="#" class="btn btn-primary">Enviar Mail</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    
+    <div class="container">
+        <div class="row"></div>
+            <h2 class="tituloTestimonio">Testimonios</h2>
+            <section class="testimonios">
+                <img src="imagenes/Testimonios/Testimonio 1.PNG" class="img-fluid" alt="...">
+                <img src="imagenes/Testimonios/Testimonio 2.PNG" class="img-fluid" alt="...">
+                <img src="imagenes/Testimonios/Testimonio 3.PNG" class="img-fluid" alt="...">
+                <img src="imagenes/Testimonios/Testimonio 4.PNG" class="img-fluid" alt="...">
+                <img src="imagenes/Testimonios/Testimonio 5.PNG" class="img-fluid" alt="...">
+                <img src="imagenes/Testimonios/Testimonio 6.PNG" class="img-fluid" alt="...">
+                <img src="imagenes/Testimonios/Testimonio 7.PNG" class="img-fluid" alt="...">
+                <img src="imagenes/Testimonios/Testimonio 8.PNG" class="img-fluid" alt="...">
+                <img src="imagenes/Testimonios/Testimonio 9.PNG" class="img-fluid" alt="...">
+                <img src="imagenes/Testimonios/Testimonio 10.PNG" class="img-fluid" alt="...">
+                
+            </section>
+        </div>
+    </div>
 </main>
 
 

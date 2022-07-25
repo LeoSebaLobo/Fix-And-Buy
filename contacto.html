@@ -9,10 +9,37 @@
     <link rel="stylesheet" href="https://bootswatch.com/5/vapor/bootstrap.min.css">
 
     <style>
-        body{
-            margin: 20px;
-        }
 
+                html {
+            min-height: 100%;
+            position: relative;
+}
+        body {
+            margin: 0;
+            margin-bottom: 40px;
+}
+        footer {
+            background-color: black;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 40px;
+        }
+        .whatsapp{
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    background-color: greenyellow;
+    bottom: 40px;
+    right: 40px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 40px;
+    border: black 3px solid;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 0 10px black;
+}
     </style>
 </head>
     
@@ -20,155 +47,94 @@
     <header>
                 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="imagenes/logo.jpeg" alt="logo" width="50px" height="50px"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#"><img src="imagenes/logo.jpeg" alt="logo" width="50px" height="50px"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-          
-              <div class="collapse navbar-collapse" id="navbarColor02">
+                    </button>
+            <div class="collapse navbar-collapse" id="navbarColor02">
                 <ul class="navbar-nav me-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home
-                      
-                    </a>
-                  </li>
-                  <li class="nav-item">
+                    <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
                     <a class="nav-link active" href="#">Contacto</a>
                     <span class="visually-hidden">(current)</span>
-                  </li>
-                  <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                     <a class="nav-link" href="productos.html">Productos</a>
-                  </li>
-                  <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                     <a class="nav-link" href="servicios.html">Servicios</a>
-                  </li>
+                    </li>
 
-                  <li class="nav-item">
+                    <li class="nav-item">
                     <a class="nav-link" href="ubicacion.html">Ubicacion</a>
-                  </li>
-                  
-                  
+                    </li>
                 </ul>
                 <form class="d-flex">
-                  <input class="form-control me-sm-2" type="text" placeholder="Search">
-                  <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                    <input class="form-control me-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
                 </form>
-              </div>
+                </div>
             </div>
-          </nav>
-   
+        </nav>
     
     </header>
-    <section>
+    <section style=" margin: 50px;">
         <h2 id="contactanos">Contactanos</h2>
         <form>
             <fieldset>
-              <div class="form-group row col-6">
+                <div class="form-group row col-6">
                 
                 <div class="col-sm-10">
-                  
-
                     <div class="form-group">
                         <label for="exampleInputPassword1" class="form-label mt-4">Nombre</label>
                         <input type="text" class="form-control" placeholder="Ingrese su nombre">
-                      </div>
+                    </div>
 
-              <div class="form-group">
+                    <div class="form-group">
+                        <label for="exampleInputPassword1" class="form-label mt-4">Apellido</label>
+                        <input type="text" class="form-control" placeholder="Ingrese su apellido">
+                    </div>
+
+            <div class="form-group">
                 <label for="exampleInputEmail1" class="form-label mt-4">Email</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresar e-mail">
                 <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu e-mail con nadie mas</small>
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-              </div>
-              <div class="form-group">
-                <label for="exampleSelect1" class="form-label mt-4">Example select</label>
-                <select class="form-select" id="exampleSelect1">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="exampleSelect2" class="form-label mt-4">Example multiple select</label>
-                <select multiple="" class="form-select" id="exampleSelect2">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="exampleTextarea" class="form-label mt-4">Example textarea</label>
-                <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-              </div>
-              <div class="form-group">
-                <label for="formFile" class="form-label mt-4">Default file input example</label>
-                <input class="form-control" type="file" id="formFile">
-              </div>
-              <fieldset class="form-group">
-                <legend class="mt-4">Radio buttons</legend>
+</div>
+
+            <div class="form-group">
+                <label for="exampleInputPassword1" class="form-label mt-4">Telefono</label>
+                <input type="number" class="form-control" placeholder="Ingrese su telefono">
+            </div>
+
+
+            <fieldset class="form-group">
+                <legend class="mt-4">Sexo</legend>
                 <div class="form-check">
-                  <label class="form-check-label">
+                <label class="form-check-label">
                     <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-                    Option one is this and that—be sure to include why it's great
-                  </label>
+                    Masculino
+                </label>
                 </div>
                 <div class="form-check">
-                  <label class="form-check-label">
+                <label class="form-check-label">
                     <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-                    Option two can be something else and selecting it will deselect option one
-                  </label>
+                    Femenino
+                </label>
                 </div>
                 <div class="form-check disabled">
-                  <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled="">
-                    Option three is disabled
-                  </label>
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" >
+                    Otro
+                </label>
                 </div>
-              </fieldset>
-              <fieldset class="form-group">
-                <legend class="mt-4">Checkboxes</legend>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">
-                    Default checkbox
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked="">
-                  <label class="form-check-label" for="flexCheckChecked">
-                    Checked checkbox
-                  </label>
-                </div>
-              </fieldset>
-              <fieldset>
-                <legend class="mt-4">Switches</legend>
-                <div class="form-check form-switch">
-                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                  <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
-                </div>
-                <div class="form-check form-switch">
-                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked="">
-                  <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
-                </div>
-              </fieldset>
-              <fieldset class="form-group">
-                <legend class="mt-4">Ranges</legend>
-                  <label for="customRange1" class="form-label">Example range</label>
-                  <input type="range" class="form-range" id="customRange1">
-                  <label for="disabledRange" class="form-label">Disabled range</label>
-                  <input type="range" class="form-range" id="disabledRange" disabled="">
-                  <label for="customRange3" class="form-label">Example range</label>
-                  <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
-              </fieldset>
-              <button type="submit" class="btn btn-primary">Submit</button>
             </fieldset>
-          </form>
+            <br>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+            </fieldset>
+        </form>
     </section>
 
     <footer>
