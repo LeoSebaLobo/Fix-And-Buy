@@ -1,13 +1,9 @@
-$color1: yellow;
-$color2: greenyellow;
-$color3: blue   ;   
-
+$PaletaDeColores:(amarillo: yellow,verdeamarello: greenyellow,azul:blue );   
 
 .logo{
     border-radius: 25px;
     
 }
-
 
 .quienessomos {
     text-align: center;
@@ -20,14 +16,12 @@ $color3: blue   ;
 
 #seccionvideo {
     margin-top: 50px;
-
 }
 
 .testimonios {
     background-color: white;
     border: 5px solid black;
     margin: 20px 150px 20px 150px;
-
 }
 
 .tituloTestimonio {
@@ -35,14 +29,15 @@ $color3: blue   ;
 }
 
 .card-title {
-    text-align: center;
-    color: $color1;
+    @extend .tituloTestimonio;
+    color: map-get($PaletaDeColores, amarillo);
 }
 
 .card-text {
-    text-align: center;
-    color: $color1;
+    @extend .tituloTestimonio;
+    color:map-get($PaletaDeColores, amarillo);
 }
+
 .btn{
     margin-left: 40px
 }
@@ -51,10 +46,16 @@ html {
             min-height: 100%;
             position: relative;
 }
-        body {
-            margin: 0;
-            margin-bottom: 40px;
+
+@mixin body($margin, $marginbottom){
+    margin: $margin;
+    margin-bottom: $marginbottom;
 }
+
+        body {
+            @include body(0, 40px )
+        }
+
         footer {
             background-color: black;
             position: absolute;
@@ -66,7 +67,7 @@ html {
     height: 40px;
     width: 40px;
     position: fixed;
-    background-color:$color2;
+    background-color:map-get($PaletaDeColores, verdeamarello);
     bottom: 40px;
     right: 40px;
     text-align: center;
@@ -83,18 +84,19 @@ html {
     margin: 30px;
 }
 .videoReparacion{
+    @extend .tituloTestimonio;
     height: 600px;
     padding-top: 290px;
     text-align: center;
-    color: $color3;
+    color: map-get($PaletaDeColores, azul);
     background-image: url(imagenes/celulares.jpg);
     border: 5px solid red;
 }
+
 .videoProteccion{
     height: 600px;
     padding-top: 290px;
-    text-align: center;
-    color: $color3;
+    color: map-get($PaletaDeColores, azul);
     background-image: url(imagenes/celulares.jpg);
     border: 5px solid red;
 }

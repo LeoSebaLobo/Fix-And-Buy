@@ -21,17 +21,15 @@
   margin: 20px 150px 20px 150px;
 }
 
-.tituloTestimonio {
+.tituloTestimonio, .videoReparacion, .card-text, .card-title {
   text-align: center;
 }
 
 .card-title {
-  text-align: center;
   color: yellow;
 }
 
 .card-text {
-  text-align: center;
   color: yellow;
 }
 
@@ -90,7 +88,6 @@ footer {
 .videoProteccion {
   height: 600px;
   padding-top: 290px;
-  text-align: center;
   color: blue;
   background-image: url(imagenes/celulares.jpg);
   border: 5px solid red;
