@@ -50,7 +50,7 @@
 .testimonios {
   background-color: white;
   border: 5px solid black;
-  margin: 20px 150px 20px 150px;
+  margin: 20px 150px 150px 150px;
 }
 
 .tituloTestimonio, .card-text, .card-title {
@@ -137,6 +137,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 150px;
 }
 
 .video {
@@ -167,6 +168,7 @@ footer {
 }
 .contenedor {
   display: flex;
+  margin-bottom: 150px;
 }
 
 .formulario {
@@ -192,4 +194,17 @@ footer {
 
 .local p {
   text-align: center;
+}
+
+footer {
+  border-top: 5px solid cyan;
+  box-shadow: 0 0 25px cyan, inset 0 0 25px cyan;
+}
+
+.listaProductos {
+  margin-bottom: 150px;
+}
+
+.mapa {
+  margin-top: 25px;
 }/*# sourceMappingURL=estilos.css.map */

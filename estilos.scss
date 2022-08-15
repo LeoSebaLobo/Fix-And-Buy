@@ -56,7 +56,7 @@ $PaletaDeColores:(amarillo: yellow,Blanco: white,azul:blue );
 .testimonios {
     background-color: map-get($PaletaDeColores, Blanco)  ;
     border: 5px solid black;
-    margin: 20px 150px 20px 150px;
+    margin: 20px 150px 150px 150px;
 }
 
 .tituloTestimonio {
@@ -157,6 +157,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 150px;
 }
 
 .video{
@@ -188,6 +189,7 @@ html {
 
 .contenedor{
     display: flex;
+    margin-bottom: 150px;
 }
 
 .formulario{
@@ -213,4 +215,17 @@ html {
 
 .local p{
     text-align: center;
+}
+
+footer{
+    border-top: 5px solid cyan;
+    box-shadow: 0 0 25px cyan, inset 0 0 25px cyan;
+}
+
+.listaProductos{
+    margin-bottom: 150px;
+}
+
+.mapa{
+    margin-top: 25px;
 }
