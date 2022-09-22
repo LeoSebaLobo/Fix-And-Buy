@@ -1,4 +1,13 @@
+let enviarCarro = document.querySelector(".botonCarrito")
+console.log(enviarCarro)
 
+
+enviarCarro.addEventListener("click", avisar)
+
+
+function avisar() {
+    alert("Su producto fue enviado al carrito de compras")
+}
 
 let productos = prompt(`Ingrese el objeto que quiere comprar y tipee ESC al finalizar:
 1 - Auricular
