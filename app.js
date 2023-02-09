@@ -106,13 +106,6 @@ switch (productos){
 
 totalCompra += suma
 
-productos = prompt(`Ingrese el objeto que quiere comprar y tipee ESC al finalizar:
-1 - Auricular
-2 - Parlantes
-3 - Accesorio
-4 - Fundas
-5 - Celular`)
-}
 alert(`El total de su compra es de ${totalCompra}$`)
 
 const carritoCompras = []
